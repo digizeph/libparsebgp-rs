@@ -1,5 +1,5 @@
 [package]
-name = "parsebgp-rs"
+name = "parsebgp_rs"
 version = "0.1.0"
 authors = ["Mingwei Zhang <mingwei@mwzhang.com>"]
 edition = "2018"
@@ -7,5 +7,12 @@ build="build.rs"
 link="parsebgp"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "parsebgp"
+path = "src/bin/parsebgp.rs"
+
+[build-dependencies]
+bindgen = "0.53.1"
 
 [dependencies]
